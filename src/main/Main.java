@@ -5,8 +5,8 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("It is the first problem input");
         Scanner sc = new Scanner(System.in);
+        System.out.println("It is the first problem input");
         int n = sc.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
@@ -15,13 +15,16 @@ public class Main {
         System.out.println(findMinimum(n, arr));
 
         System.out.println("It is the second problem input");
-        Scanner console = new Scanner(System.in);
-        int length = console.nextInt();
+        int length = sc.nextInt();
         int[] a = new int[n];
         for (int i = 0; i < length; i++) {
             a[i] = sc.nextInt();
         }
         System.out.println(findAverage(length, a));
+
+        System.out.println("It is the third problem input");
+        int b = sc.nextInt();
+        System.out.println(isPrime(b));
     }
 
 
@@ -61,5 +64,28 @@ public class Main {
             sum += arr[i];
         }
         return sum / length;
+    }
+
+    /**
+     * This method determines either the given number is prime or not.
+     * It uses the for loop to iterate through each number to the square root of a given number.
+     * The loop reaches the square root of the number to reduce the number of iterations,
+     * since we will still check all possible divisors of the number when we reach its root.
+     * Time complexity: O(sqrt(n)), where n is the given number.
+     * This algorithm iterates only from 2 to the square root of the given number in the loop,
+     * resulting in square root time complexity and makes it really efficient, especially for large numbers.
+     * @param n The number to check for being prime or not.
+     * @return The String to indicate the result of check.
+     */
+    public static String isPrime(int n){
+        if(n <= 1){
+            return "Neither prime nor composite";
+        }
+        for (int i = 2; i <= Math.sqrt(n); i++) {
+            if(n % i == 0){
+                return "Composite";
+            }
+        }
+        return "Prime";
     }
 }

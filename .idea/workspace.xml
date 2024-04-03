@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="946820f6-cb2c-4136-a30c-93acc119742d" name="Changes" comment="I've created the method which solved first problem. Method evaluates the minimum element of the given array. Also, created some test cases in tests package.">
-      <change afterPath="$PROJECT_DIR$/src/tests/SecondProblemTest.java" afterDir="false" />
+    <list default="true" id="946820f6-cb2c-4136-a30c-93acc119742d" name="Changes" comment="I've created the method which solved second problem. Method evaluates the average value of the elements in the given array. Also, created some test cases in tests package related to this problem.">
+      <change afterPath="$PROJECT_DIR$/src/tests/ThirdProblemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
@@ -40,6 +40,7 @@
     "JUnit.FirstProblem.executor": "Run",
     "JUnit.FirstProblemTest.executor": "Run",
     "JUnit.SecondProblemTest.executor": "Run",
+    "JUnit.ThirdProblemTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -77,8 +78,17 @@
       <updated>1712114877897</updated>
       <workItem from="1712114878995" duration="134000" />
       <workItem from="1712115014723" duration="7190000" />
-      <workItem from="1712159626642" duration="4396000" />
+      <workItem from="1712159626642" duration="7580000" />
     </task>
+    <task id="LOCAL-00001" summary="I've created the method which solved second problem. Method evaluates the average value of the elements in the given array. Also, created some test cases in tests package related to this problem.">
+      <option name="closed" value="true" />
+      <created>1712174502458</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1712174502458</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -86,6 +96,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="I've created the method which solved first problem. Method evaluates the minimum element of the given array. Also, created some test cases in tests package." />
-    <option name="LAST_COMMIT_MESSAGE" value="I've created the method which solved first problem. Method evaluates the minimum element of the given array. Also, created some test cases in tests package." />
+    <MESSAGE value="I've created the method which solved second problem. Method evaluates the average value of the elements in the given array. Also, created some test cases in tests package related to this problem." />
+    <option name="LAST_COMMIT_MESSAGE" value="I've created the method which solved second problem. Method evaluates the average value of the elements in the given array. Also, created some test cases in tests package related to this problem." />
   </component>
 </project>
