@@ -5,12 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="946820f6-cb2c-4136-a30c-93acc119742d" name="Changes" comment="I've created the method which solved first problem. Method evaluates the minimum element of the given array. Also, created some test cases in tests package.">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/FirstProblemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/SecondProblemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ADS_Assingnment.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ADS_Assingnment.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +38,8 @@
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "true",
     "JUnit.FirstProblem.executor": "Run",
+    "JUnit.FirstProblemTest.executor": "Run",
+    "JUnit.SecondProblemTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
@@ -78,6 +77,7 @@
       <updated>1712114877897</updated>
       <workItem from="1712114878995" duration="134000" />
       <workItem from="1712115014723" duration="7190000" />
+      <workItem from="1712159626642" duration="4396000" />
     </task>
     <servers />
   </component>
