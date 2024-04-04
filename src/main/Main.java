@@ -29,6 +29,10 @@ public class Main {
         System.out.println("It is the fourth problem input:");
         int c = sc.nextInt();
         System.out.println(factorial(c));
+
+        System.out.println("It is the fifth problem input");
+        int t = sc.nextInt();
+        System.out.println(findFibonacci(t));
     }
 
 
@@ -108,6 +112,24 @@ public class Main {
         }
         else{
             return n * factorial(n - 1);
+        }
+    }
+
+    /**
+     * This method calculates the nth Fibonacci number.
+     * It uses a recursion to iterate through whole sequence.
+     * Time complexity: O(2^n), where n is the input number.
+     * The recursive algorithm calls itself twice in one call which causes the binary tree,
+     * where each node has two children, resulting in exponential time complexity.
+     * @param n The position in the Fibonacci sequence for which the number is to be calculated.
+     * @return The nth Fibonacci number in the sequence.
+     */
+    public static int findFibonacci(int n){
+        if(n == 0 || n == 1){
+            return n;
+        }
+        else{
+            return findFibonacci(n - 1) + findFibonacci(n - 2);
         }
     }
 }
