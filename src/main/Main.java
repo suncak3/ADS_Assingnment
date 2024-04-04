@@ -30,9 +30,15 @@ public class Main {
         int c = sc.nextInt();
         System.out.println(factorial(c));
 
-        System.out.println("It is the fifth problem input");
+        System.out.println("It is the fifth problem input:");
         int t = sc.nextInt();
         System.out.println(findFibonacci(t));
+
+        System.out.println("It is the sixth problem input:");
+        int d = sc.nextInt();
+        int e = sc.nextInt();
+        System.out.println(power(d, e));
+
     }
 
 
@@ -130,6 +136,31 @@ public class Main {
         }
         else{
             return findFibonacci(n - 1) + findFibonacci(n - 2);
+        }
+    }
+
+    /**
+     * This method calculates the power of a number to a given exponent.
+     * It uses a recursive approach optimized with exponentiation.
+     * Time complexity: O(log n), where n is the power.
+     * This recursive algorithm reduces the number of iterations by using the case
+     * where n is even, so we can reduce the problem to calculating a^(n/2)once,
+     * and then squaring the result, rather than calculating a multiplied by itself n times,
+     * which resulting in logarithmic time complexity, not a linear.
+     * @param a The base that is to be raised to the power of n.
+     * @param n The exponent to which the base a is to be raised.
+     * @return The result of raising a to the power of n.
+     */
+    public static int power(int a, int n){
+        if(n == 0){
+            return 1;
+        }
+        else if(n % 2 == 0){
+            int half = power(a, n / 2);
+            return half * half;
+        }
+        else{
+            return a * power(a, n - 1);
         }
     }
 }
