@@ -55,6 +55,11 @@ public class Main {
         System.out.println("It is the eighth problem input:");
         String s = sc.nextLine();
         System.out.println(checkForDigits(s, 0));
+
+        System.out.println("It is the ninth problem input:");
+        int n = sc.nextInt();
+        int k = sc.nextInt();
+        System.out.println(binomialCoefficient(n, k));
     }
 
 
@@ -225,5 +230,24 @@ public class Main {
             return "No";
         }
         return checkForDigits(s, index + 1);
+    }
+
+    /**
+     * This method calculates binomial coefficient (n choose k) of two given number.
+     * The method uses the recursive property of binomial coefficients,
+     * where each coefficient is the sum of the two coefficients above it.
+     *
+     * Time complexity: O(2^n), where n greater or equals k.
+     * The algorithm calls itself twice at each execution which causes binary tree,
+     * so, as the result the time complexity of this code exponential.
+     * @param n The total number of items.
+     * @param k The number of items to choose.
+     * @return The binomial coefficient for the given values of n and k.
+     */
+    public static int binomialCoefficient(int n, int k){
+        if(k == 0 || n == k){
+            return 1;
+        }
+        return binomialCoefficient(n -1, k - 1) + binomialCoefficient(n - 1, k);
     }
 }
