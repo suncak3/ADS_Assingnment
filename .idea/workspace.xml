@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="946820f6-cb2c-4136-a30c-93acc119742d" name="Changes" comment="I've created the method which solved eighth problem. Method checks if all characters in the string are digits. Also, created some test cases in tests package related to this problem.">
-      <change afterPath="$PROJECT_DIR$/src/tests/NinthProblemTest.java" afterDir="false" />
+    <list default="true" id="946820f6-cb2c-4136-a30c-93acc119742d" name="Changes" comment="I've created the method which solved ninth problem. Method calculates binomial coefficient (n choose k) of two given number. Also, created some test cases in tests package related to this problem.">
+      <change afterPath="$PROJECT_DIR$/src/tests/TenthProblemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
@@ -47,6 +47,7 @@
     "JUnit.SeventhProblemTest.executor": "Run",
     "JUnit.SixthProblemTest.c.executor": "Run",
     "JUnit.SixthProblemTest.executor": "Run",
+    "JUnit.TenthProblemTest.executor": "Run",
     "JUnit.ThirdProblemTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -111,7 +112,7 @@
       <workItem from="1712159626642" duration="7943000" />
       <workItem from="1712231413528" duration="2241000" />
       <workItem from="1712258007302" duration="4824000" />
-      <workItem from="1712308788653" duration="15717000" />
+      <workItem from="1712308788653" duration="18797000" />
     </task>
     <task id="LOCAL-00001" summary="I've created the method which solved second problem. Method evaluates the average value of the elements in the given array. Also, created some test cases in tests package related to this problem.">
       <option name="closed" value="true" />
@@ -161,7 +162,15 @@
       <option name="project" value="LOCAL" />
       <updated>1712332797650</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="I've created the method which solved ninth problem. Method calculates binomial coefficient (n choose k) of two given number. Also, created some test cases in tests package related to this problem.">
+      <option name="closed" value="true" />
+      <created>1712337249622</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1712337249622</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +184,7 @@
     <MESSAGE value="I've created the method which solved fifth problem. Method finds The nth Fibonacci number in the sequence. Also, created some test cases in tests package related to this problem." />
     <MESSAGE value="I've created the method which solved seventh problem. Method reverses the elements of a given LinkedList. Also, created some test cases in tests package related to this problem." />
     <MESSAGE value="I've created the method which solved eighth problem. Method checks if all characters in the string are digits. Also, created some test cases in tests package related to this problem." />
-    <option name="LAST_COMMIT_MESSAGE" value="I've created the method which solved eighth problem. Method checks if all characters in the string are digits. Also, created some test cases in tests package related to this problem." />
+    <MESSAGE value="I've created the method which solved ninth problem. Method calculates binomial coefficient (n choose k) of two given number. Also, created some test cases in tests package related to this problem." />
+    <option name="LAST_COMMIT_MESSAGE" value="I've created the method which solved ninth problem. Method calculates binomial coefficient (n choose k) of two given number. Also, created some test cases in tests package related to this problem." />
   </component>
 </project>

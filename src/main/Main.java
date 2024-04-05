@@ -60,6 +60,11 @@ public class Main {
         int n = sc.nextInt();
         int k = sc.nextInt();
         System.out.println(binomialCoefficient(n, k));
+
+        System.out.println("It is the tenth problem input:");
+        int a = sc.nextInt();
+        int b = sc.nextInt();
+        System.out.println(gcd(a, b));
     }
 
 
@@ -249,5 +254,25 @@ public class Main {
             return 1;
         }
         return binomialCoefficient(n -1, k - 1) + binomialCoefficient(n - 1, k);
+    }
+
+    /**
+     * This method calculates the gcd of two given number by using Euclidean Algorithm.
+     * The Euclidean algorithm is based on the principle that the GCD of two numbers also divides their difference.
+     * This method applies this principle recursively.
+     *
+     * Time complexity: O(log(min(a, b)) where a and b are input numbers.
+     * The algorithm's time complexity
+     * is logarithmic in the smaller of the two numbers because with each recursive call, the second parameter 'b'
+     * becomes the remainder of 'a' divided by 'b', which is strictly less than 'b' and reduces quickly.
+     * @param a The first integer.
+     * @param b The second integer.
+     * @return The GCD of a and b.
+     */
+    public static int gcd(int a, int b){
+        if(b == 0){
+            return a;
+        }
+        return gcd(b, a%b);
     }
 }
