@@ -51,6 +51,10 @@ public class Main {
             System.out.print(el + " ");
         }
         System.out.println();
+
+        System.out.println("It is the eighth problem input:");
+        String s = sc.nextLine();
+        System.out.println(checkForDigits(s, 0));
     }
 
 
@@ -202,4 +206,24 @@ public class Main {
         return reversedLinkedList(size, index + 1, list);
     }
 
+    /**
+     * This method checks if all characters in the string are digits.
+     * It uses recursive approach to iterate through each character of the string.
+     *
+     * Time complexity: O(n), where n is the length of the given string.
+     * The recursive algorithm checks each character of the string,
+     * resulting in linear time complexity.
+     * @param s The string to be checked.
+     * @param index The current position in the string.
+     * @return "Yes" if all characters in the string are digits, "No" otherwise.
+     */
+    public static String checkForDigits(String s, int index){
+        if(index == s.length()){
+            return "Yes";
+        }
+        if(!Character.isDigit(s.charAt(index))){
+            return "No";
+        }
+        return checkForDigits(s, index + 1);
+    }
 }
