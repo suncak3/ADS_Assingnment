@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="946820f6-cb2c-4136-a30c-93acc119742d" name="Changes" comment="I've created the method which solved fifth problem. Method finds The nth Fibonacci number in the sequence. Also, created some test cases in tests package related to this problem.">
-      <change afterPath="$PROJECT_DIR$/src/tests/SixthProblemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/EighthProblemTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/SeventhProblemTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/Main.java" afterDir="false" />
     </list>
@@ -37,11 +38,15 @@
   "keyToString": {
     "Application.Main.executor": "Run",
     "Downloaded.Files.Path.Enabled": "true",
+    "JUnit.EighthProblemTest.executor": "Run",
     "JUnit.FifthProblemTest.executor": "Run",
     "JUnit.FirstProblem.executor": "Run",
     "JUnit.FirstProblemTest.executor": "Run",
     "JUnit.FourthProblemTest.executor": "Run",
     "JUnit.SecondProblemTest.executor": "Run",
+    "JUnit.SeventhProblemTest.executor": "Run",
+    "JUnit.SixthProblemTest.c.executor": "Run",
+    "JUnit.SixthProblemTest.executor": "Run",
     "JUnit.ThirdProblemTest.executor": "Run",
     "Repository.Attach.Annotations": "false",
     "Repository.Attach.JavaDocs": "false",
@@ -63,6 +68,29 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="SixthProblemTest.c" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ADS_Assingnment" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="tests" />
+      <option name="MAIN_CLASS_NAME" value="tests.SixthProblemTest" />
+      <option name="METHOD_NAME" value="c" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.SixthProblemTest.c" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -83,6 +111,7 @@
       <workItem from="1712159626642" duration="7943000" />
       <workItem from="1712231413528" duration="2241000" />
       <workItem from="1712258007302" duration="4824000" />
+      <workItem from="1712308788653" duration="13085000" />
     </task>
     <task id="LOCAL-00001" summary="I've created the method which solved second problem. Method evaluates the average value of the elements in the given array. Also, created some test cases in tests package related to this problem.">
       <option name="closed" value="true" />

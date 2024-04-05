@@ -1,12 +1,13 @@
 package main;
 
+import java.util.LinkedList;
 import java.util.Scanner;
 
 
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("It is the first problem input:");
+        /*System.out.println("It is the first problem input:");
         int n = sc.nextInt();
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
@@ -37,8 +38,19 @@ public class Main {
         System.out.println("It is the sixth problem input:");
         int d = sc.nextInt();
         int e = sc.nextInt();
-        System.out.println(power(d, e));
+        System.out.println(power(d, e));*/
 
+        System.out.println("It is the seventh problem output");
+        LinkedList<Integer> list = new LinkedList<>();
+        list.add(1);
+        list.add(1);
+        list.add(1);
+        list.add(4);
+        reversedLinkedList(list.size(),0, list);
+        for(Integer el : list){
+            System.out.print(el + " ");
+        }
+        System.out.println();
     }
 
 
@@ -163,4 +175,31 @@ public class Main {
             return a * power(a, n - 1);
         }
     }
+
+    /**
+     * This method reverses the elements of a given LinkedList.
+     * It uses a recursive approach where each call removes the last element
+     * and adds it back at the current index.
+     *
+     * Time complexity: O(n^2), where n is the size of the LinkedList.
+     * Each recursive call involves two main operations: removeLast and add.
+     * removeLast is O(1) because it simply removes the tail element.
+     * The add operation, which inserts the removed element at a specific index,
+     * can be up to O(n) because it may need to shift the elements after the insertion point.
+     * Since these operations are performed in each recursive call and the number of elements
+     * to shift increases as we progress, the total time complexity is quadratic.
+     * @param size The number of elements in the LinkedList.
+     * @param index The current index for insertion in the recursive call.
+     * @param list The LinkedList to be reversed.
+     * @return The LinkedList with its elements in reversed order.
+     */
+    public static LinkedList<Integer> reversedLinkedList(int size, int index, LinkedList<Integer> list){
+        if(index == size){
+            return list;
+        }
+        int last = list.removeLast();
+        list.add(index, last);
+        return reversedLinkedList(size, index + 1, list);
+    }
+
 }
