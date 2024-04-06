@@ -7,64 +7,160 @@ import java.util.Scanner;
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        /*System.out.println("It is the first problem input:");
+        double startTime, endTime;
+        double duration;
+        System.out.println("Hello, choose the task that you want to run 1-10: ");
         int n = sc.nextInt();
-        int[] arr = new int[n];
-        for (int i = 0; i < n; i++) {
-            arr[i] = sc.nextInt();
+        if(n == 1){
+            System.out.println("It is the first problem input:");
+            System.out.println("Input number of elements: ");
+            int q = sc.nextInt();
+            System.out.println("Input the array: ");
+            int[] arr = new int[q];
+            for (int i = 0; i < q; i++) {
+                arr[i] = sc.nextInt();
+            }
+            startTime = System.nanoTime();
+            int result = findMinimum(q, arr);
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000000;
+            System.out.println("Minimum element is: " + result);
+            System.out.println("Time complexity: O(n), where n is the length of the array.");
+            System.out.println("Time taken: " + duration+ " milliseconds.");
         }
-        System.out.println(findMinimum(n, arr));
 
-        System.out.println("It is the second problem input:");
-        int length = sc.nextInt();
-        int[] a = new int[n];
-        for (int i = 0; i < length; i++) {
-            a[i] = sc.nextInt();
+        if(n == 2){
+            System.out.println("It is the second problem input:");
+            System.out.println("Input number of elements: ");
+            int length = sc.nextInt();
+            System.out.println("Input the array: ");
+            int[] a = new int[length];
+            for (int i = 0; i < length; i++) {
+                a[i] = sc.nextInt();
+            }
+            startTime = System.nanoTime();
+            double result = findAverage(length, a);
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000000;
+            System.out.println("Average value is: " + result);
+            System.out.println("Time complexity: O(n), where n is the length of the array.");
+            System.out.println("Time taken: " + duration+ " milliseconds.");
         }
-        System.out.println(findAverage(length, a));
 
-        System.out.println("It is the third problem input:");
-        int b = sc.nextInt();
-        System.out.println(isPrime(b));
-
-        System.out.println("It is the fourth problem input:");
-        int c = sc.nextInt();
-        System.out.println(factorial(c));
-
-        System.out.println("It is the fifth problem input:");
-        int t = sc.nextInt();
-        System.out.println(findFibonacci(t));
-
-        System.out.println("It is the sixth problem input:");
-        int d = sc.nextInt();
-        int e = sc.nextInt();
-        System.out.println(power(d, e));*/
-
-        System.out.println("It is the seventh problem output");
-        LinkedList<Integer> list = new LinkedList<>();
-        list.add(1);
-        list.add(1);
-        list.add(1);
-        list.add(4);
-        reversedLinkedList(list.size(),0, list);
-        for(Integer el : list){
-            System.out.print(el + " ");
+        if(n == 3){
+            System.out.println("It is the third problem input:");
+            System.out.println("Input your number: ");
+            int b = sc.nextInt();
+            startTime = System.nanoTime();
+            String result = isPrime(b);
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000000;
+            System.out.println("Your given number is " + result);
+            System.out.println("Time complexity: O(sqrt(n)), where n is the given number");
+            System.out.println("Time taken: " + duration+ " milliseconds.");
         }
-        System.out.println();
 
-        System.out.println("It is the eighth problem input:");
-        String s = sc.nextLine();
-        System.out.println(checkForDigits(s, 0));
+        if(n == 4){
+            System.out.println("It is the fourth problem input:");
+            System.out.println("Input your number to calculate its factorial: ");
+            int c = sc.nextInt();
+            startTime = System.nanoTime();
+            int result = factorial(c);
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000000;
+            System.out.println("Factorial of a given number is: " + result);
+            System.out.println("Time complexity: O(n), where n is the given number");
+            System.out.println("Time taken: " + duration+ " milliseconds.");
+        }
 
-        System.out.println("It is the ninth problem input:");
-        int n = sc.nextInt();
-        int k = sc.nextInt();
-        System.out.println(binomialCoefficient(n, k));
+        if(n == 5){
+            System.out.println("It is the fifth problem input:");
+            System.out.println("Input your n-th position in Fibonacci sequence: ");
+            int t = sc.nextInt();
+            startTime = System.nanoTime();
+            int result = findFibonacci(t);
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000000;
+            System.out.println("The element in Fibonacci sequence: " + result);
+            System.out.println("Time complexity: O(2^n), where n is the given number");
+            System.out.println("Time taken: " + duration+ " milliseconds.");
+        }
 
-        System.out.println("It is the tenth problem input:");
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        System.out.println(gcd(a, b));
+        if(n == 6){
+            System.out.println("It is the sixth problem input:");
+            System.out.println("Input your base number: ");
+            int d = sc.nextInt();
+            System.out.println("Input your exponent number: ");
+            int e = sc.nextInt();
+            startTime = System.nanoTime();
+            int result = power(d, e);
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000000;
+            System.out.println("Base number to the power of exponent is: " + result);
+            System.out.println("Time complexity: O(log n), where n is the exponent");
+            System.out.println("Time taken: " + duration+ " milliseconds.");
+        }
+
+        if(n == 7){
+            System.out.println("It is the seventh problem input: ");
+            System.out.println("Input the number of elements: ");
+            int size = sc.nextInt();
+            System.out.println("Input your array to be reversed: ");
+            int arr[] = new int[size];
+            for (int i = 0; i < size; i++) {
+                arr[i] = sc.nextInt();
+            }
+            System.out.print("Reversed sequence: ");
+            startTime = System.nanoTime();
+            reverseSequence(size - 1, arr);
+            System.out.println();
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000000;
+            System.out.println("Time complexity: O(n), where n is the length of the array.");
+            System.out.println("Time taken: " + duration+ " milliseconds.");
+        }
+
+        if(n == 8){
+            System.out.println("It is the eighth problem input:");
+            System.out.println("Input the string: ");
+            sc.nextLine();
+            String s = sc.nextLine();
+            startTime = System.nanoTime();
+            String result = checkForDigits(s, 0);
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000000;
+            System.out.println("String contains only digits(y/n): " + result);
+            System.out.println("Time complexity: O(n), where n is the length of the string.");
+            System.out.println("Time taken: " + duration+ " milliseconds.");
+        }
+
+        if(n == 9){
+            System.out.println("It is the ninth problem input:");
+            System.out.println("Input your coefficients: ");
+            int f = sc.nextInt();
+            int k = sc.nextInt();
+            startTime = System.nanoTime();
+            int result = binomialCoefficient(f, k);
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000000;
+            System.out.println("The binomial coefficient is: " + result);
+            System.out.println("Time complexity: O(2^n), where n equals or greater than k.");
+            System.out.println("Time taken: " + duration+ " milliseconds.");
+        }
+
+        if(n == 10){
+            System.out.println("It is the tenth problem input:");
+            System.out.println("Input your numbers to find gcd: ");
+            int o = sc.nextInt();
+            int p = sc.nextInt();
+            startTime = System.nanoTime();
+            int result = gcd(o, p);
+            endTime = System.nanoTime();
+            duration = (endTime - startTime) / 1000000;
+            System.out.println("GCD is: " + result);
+            System.out.println("Time complexity: O(log(min(a, b)) where a and b are input numbers.");
+            System.out.println("Time taken: " + duration+ " milliseconds.");
+        }
     }
 
 
@@ -191,29 +287,20 @@ public class Main {
     }
 
     /**
-     * This method reverses the elements of a given LinkedList.
-     * It uses a recursive approach where each call removes the last element
-     * and adds it back at the current index.
+     * This method prints the elements of a given array in reverse order.
+     * It uses a recursive approach to iterate through each element.
      *
-     * Time complexity: O(n^2), where n is the size of the LinkedList.
-     * Each recursive call involves two main operations: removeLast and add.
-     * removeLast is O(1) because it simply removes the tail element.
-     * The add operation, which inserts the removed element at a specific index,
-     * can be up to O(n) because it may need to shift the elements after the insertion point.
-     * Since these operations are performed in each recursive call and the number of elements
-     * to shift increases as we progress, the total time complexity is quadratic.
-     * @param size The number of elements in the LinkedList.
-     * @param index The current index for insertion in the recursive call.
-     * @param list The LinkedList to be reversed.
-     * @return The LinkedList with its elements in reversed order.
+     * Time complexity: O(n), where n is the length of the array.
+     * This is because the recursive method is called once for each element in the array.
+     * @param index The starting index to begin the reverse sequence, usually the last index of the array.
+     * @param sequence The array of integers to be printed in reverse.
      */
-    public static LinkedList<Integer> reversedLinkedList(int size, int index, LinkedList<Integer> list){
-        if(index == size){
-            return list;
+    public static void reverseSequence(int index, int[] sequence) {
+        if (index < 0) {
+            return;
         }
-        int last = list.removeLast();
-        list.add(index, last);
-        return reversedLinkedList(size, index + 1, list);
+        System.out.print(sequence[index] + " ");
+        reverseSequence(index - 1, sequence);
     }
 
     /**
